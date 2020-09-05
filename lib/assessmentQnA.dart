@@ -7,6 +7,18 @@ class AssessmentQnA {
     qna(
         'Have you been anxious, worried or scared lately about things in life?',
         true),
+    qna(
+        'Have you been anxious, worried or scared lately about things in life?',
+        true),
+    qna(
+        'Have you been anxious, worried or scared lately about things in life?',
+  true),
+    qna(
+        'Have you been anxious, worried or scared lately about things in life?',
+        true),
+    qna(
+        'Have you been anxious, worried or scared lately about things in life?',
+        true),
     //TODO: Create a Question Bank for Mental Assesment
   ];
 

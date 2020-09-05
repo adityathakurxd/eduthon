@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:are_you_good_bro/assessmentQnA.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:are_you_good_bro/result.dart';
 
 void main() => runApp(Home());
 
 AssessmentQnA assessmentQnA = AssessmentQnA();
+Result result = Result();
 
 class Home extends StatelessWidget {
   @override
@@ -41,10 +43,30 @@ class _MentalAssessmentState extends State<MentalAssessment> {
 
     setState(() {
       if (assessmentQnA.isFinished() == true) {
-        Alert(context: context, title: "Thank You", desc: "The assessment is over!")
-            .show();
+        Alert(
+          context: context,
+          type: AlertType.error,
+          title: "Thank You!",
+          desc: "The Assessment has is now over.",
+          buttons: [
+            DialogButton(
+              child: Text(
+                "View Results",
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Result()),
+                );
+              },
+              width: 120,
+            )
+          ],
+        ).show();
         assessmentQnA.reset();
         moodCheck = [];
+
       } else {
         if (userPickedAnswer == correctAnswer) {
           moodCheck.add(Icon(
