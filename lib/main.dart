@@ -4,12 +4,17 @@ import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:are_you_good_bro/result.dart';
 
 void main() => runApp(Home());
-
 AssessmentQnA assessmentQnA = AssessmentQnA();
 ResultScore resultScore = ResultScore();
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+
   Widget build(BuildContext context) {
     return MaterialApp (
       home: Scaffold(
@@ -32,13 +37,9 @@ class MentalAssessment extends StatefulWidget {
   @override
   _MentalAssessmentState createState() => _MentalAssessmentState();
 }
-
-
 class _MentalAssessmentState extends State<MentalAssessment> {
 
   List<Icon> moodCheck = [];
-
-
 
   void checkAnswer(bool userPickedAnswer) {
     bool correctAnswer = assessmentQnA.getCorrectAnswer();
