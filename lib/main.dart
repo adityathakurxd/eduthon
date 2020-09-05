@@ -48,8 +48,8 @@ class _MentalAssessmentState extends State<MentalAssessment> {
         Alert(
           context: context,
           type: AlertType.info,
-          title: "Thank You !",
-          desc: "The Assessment is now over.",
+          title: "Thank You!",
+          desc: "The Assessment is now over. It will be reset",
           buttons: [
             DialogButton(
               child: Text(

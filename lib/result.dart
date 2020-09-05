@@ -11,6 +11,15 @@ class Result extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Assessment Result'),
+          actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.exit_to_app),
+              onPressed: () {
+                resultScore.resetScore();
+                Navigator.pop(context);
+              },
+            ),
+          ],
         ),
         body: SafeArea(
           child: Center(
@@ -39,7 +48,7 @@ class Result extends StatelessWidget {
                     width: 200.0,
                     height: 300.0,
                   ),
-                  RaisedButton (
+                  RaisedButton(
                     child: Text('View tips to imporve'),
                     onPressed: () {},
                   ),
