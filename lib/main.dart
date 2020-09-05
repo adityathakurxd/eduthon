@@ -6,7 +6,7 @@ import 'package:are_you_good_bro/result.dart';
 void main() => runApp(Home());
 
 AssessmentQnA assessmentQnA = AssessmentQnA();
-Result result = Result();
+ResultScore resultScore = ResultScore();
 
 class Home extends StatelessWidget {
   @override
@@ -38,6 +38,8 @@ class _MentalAssessmentState extends State<MentalAssessment> {
 
   List<Icon> moodCheck = [];
 
+
+
   void checkAnswer(bool userPickedAnswer) {
     bool correctAnswer = assessmentQnA.getCorrectAnswer();
 
@@ -45,9 +47,9 @@ class _MentalAssessmentState extends State<MentalAssessment> {
       if (assessmentQnA.isFinished() == true) {
         Alert(
           context: context,
-          type: AlertType.error,
-          title: "Thank You!",
-          desc: "The Assessment has is now over.",
+          type: AlertType.info,
+          title: "Thank You !",
+          desc: "The Assessment is now over.",
           buttons: [
             DialogButton(
               child: Text(
@@ -73,6 +75,7 @@ class _MentalAssessmentState extends State<MentalAssessment> {
             Icons.mood,
             color: Colors.green,
           ));
+          resultScore.addScore();
         } else {
           moodCheck.add(Icon(
             Icons.mood_bad,
