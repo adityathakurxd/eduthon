@@ -1,16 +1,35 @@
-# are_you_good_bro
+# **Are you good bro?**
 
-Are you good bro?
+**“Healing takes time, and asking for help is a courageous step”**
 
-## Getting Started
+Many students face mental health issues but are completely unaware about it. The problem stems from a lack of awareness about mental health.  You might be experiencing the symptoms but be unsure of what it is and if it can be cured.
 
-This project is a starting point for a Flutter application.
+*Are you good bro?* is an attempt to encourage users to be more mindful, to look within and bring the Mental Health care to handheld devices.
 
-A few resources to get you started if this is your first Flutter project:
+## Application Map:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ - Splash Screen: The app opens to a Splash Screen which displays the title and details of the application.
+ - Home Page: The home page comes with a Mental Health Assessment test which is taken by the User.
+ - Results Page: The score result of the test taken is displayed as happiness index using percent indicator package.
+The page has accessible links to external resources: 
+	1) Contact a Therapist Form
+	2) People First Article for '10 top tips for good mental health'
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
+## Tech Stack
+This project is a made as a Flutter application.
+Languages used: Dart
+
+
+For help getting started with Flutter, view [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Team Details
+**ONLY PROGRAMMERS** 
+
+ - [Aditya Thakur](https://devfolio.co/@adityathakurxd)  
+ - Sarvesh Maggon 
+ - Lakshay Chaudhary 
+ - Mayank Kalra
+
+[**Project Presentation Link**](https://docs.google.com/presentation/d/1SlNoiXU7mIxyXg9RszNIaGJSPVk_i7q2km5-5efhwiw/edit?usp=sharing)
+
