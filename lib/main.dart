@@ -14,12 +14,13 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   @override
-
   Widget build(BuildContext context) {
     return MaterialApp (
       home: Scaffold(
         appBar: AppBar(
           title: Text('Mental Health Assessment'),
+          backgroundColor: Colors.black,
+          shadowColor: Colors.grey.shade900,
         ),
         body: SafeArea(
           child: Padding(
@@ -50,9 +51,10 @@ class _MentalAssessmentState extends State<MentalAssessment> {
           context: context,
           type: AlertType.info,
           title: "Thank You!",
-          desc: "The Assessment is now over. It will be reset",
+          desc: "The Assessment is now over",
           buttons: [
             DialogButton(
+              color: Colors.grey.shade900,
               child: Text(
                 "View Results",
                 style: TextStyle(color: Colors.white, fontSize: 20),
@@ -63,7 +65,7 @@ class _MentalAssessmentState extends State<MentalAssessment> {
                   MaterialPageRoute(builder: (context) => Result()),
                 );
               },
-              width: 120,
+              width: 140,
             )
           ],
         ).show();
@@ -117,7 +119,7 @@ class _MentalAssessmentState extends State<MentalAssessment> {
               textColor: Colors.white,
               color: Colors.green,
               child: Text(
-                'Yes. I have.',
+                'Yes',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20.0,
